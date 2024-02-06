@@ -21,8 +21,16 @@ public class Main {
         studentList.add(claire);
         studentList.add(annette);
 
-
+        /**
+         * This creates a school called "tm".
+         */
         School tm = new School(teacherList,studentList);
-        System.out.println(tm.getTotalMoneyEarned());
+        System.out.println("tm has earned " + tm.getTotalMoneyEarned());
+        System.out.println("tm has spent" + tm.getTotalMoneySpent());
+
+        mark.payFees(10000);
+        System.out.println("tm has earned $" + tm.getTotalMoneyEarned());
+        annette.payFees(20000);
+        System.out.println("tm has earned $" + tm.getTotalMoneyEarned());
     }
 }
